@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday ＹＨＲ</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <div class="htmleaf-container">
+      <div class="wrapper">
+        <div class="container">
+          <h1 style=" color:#dfc3cc;">ＹＨＲ</h1>
+
+          <form class="form">
+            <input
+              id="userName"
+              name="userName"
+              type="text"
+              placeholder="this username"
+            />
+            <input id="pwd" name="pwd" type="password" placeholder="password la" />
+            <button type="submit" id="login-button">iyo,login la</button>
+          </form>
+        </div>
+       
+         <!--动态方块-->
+           <ul class="bg-bubbles">
+        <li>
+          <img src="./img/d1.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d2.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d3.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d4.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d5.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d1.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d2.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d3.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d4.jpg" style="width: 100%; height: 100%" />
+        </li>
+        <li>
+          <img src="./img/d5.jpg" style="width: 100%; height: 100%" />
+        </li>
+      </ul>
+      </div>
+    </div>
+    <audio id="kx1"src="music/爱在西元前-周杰伦-本子音乐网.mp3" autoplay="autoplay" loop="loop"></audio>
+  <script type="text/javascript">
+    function toggleSound(){
+      var music=document.getElementById("kx1");
+      console.log(music);
+      console.log(music.paused);
+      if(music.paused){
+        music.paused=false;
+        music.play();
+      }
+    }
+    setInterval("toggleSound()",1);
+  </script>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    
+  </body>
+</html>
